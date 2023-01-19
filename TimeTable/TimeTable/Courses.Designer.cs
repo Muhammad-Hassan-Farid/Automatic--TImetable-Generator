@@ -38,6 +38,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cInsertPanel = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.SemesterNotxt = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.courseHOURS = new System.Windows.Forms.Label();
@@ -48,14 +50,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cUpdateOrDeletePanel = new System.Windows.Forms.Panel();
             this.updateOrDelete = new System.Windows.Forms.Panel();
-            this.deleteBTN = new System.Windows.Forms.Button();
-            this.UpdateBTN = new System.Windows.Forms.Button();
-            this.cUpdateRecord = new System.Windows.Forms.Panel();
             this.cDeleteRecord = new System.Windows.Forms.Panel();
             this.button18 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.Cdeltebox = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.deleteBTN = new System.Windows.Forms.Button();
+            this.UpdateBTN = new System.Windows.Forms.Button();
+            this.cUpdateRecord = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.UpdateSemesterNo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.cHOURStxt = new System.Windows.Forms.TextBox();
@@ -69,16 +73,12 @@
             this.searchID = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.SemesterNotxt = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.UpdateSemesterNo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.cInsertPanel.SuspendLayout();
             this.cUpdateOrDeletePanel.SuspendLayout();
             this.updateOrDelete.SuspendLayout();
-            this.cUpdateRecord.SuspendLayout();
             this.cDeleteRecord.SuspendLayout();
+            this.cUpdateRecord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -186,6 +186,23 @@
             this.cInsertPanel.Size = new System.Drawing.Size(762, 435);
             this.cInsertPanel.TabIndex = 49;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(211, 245);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 15);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Semester No.";
+            // 
+            // SemesterNotxt
+            // 
+            this.SemesterNotxt.Location = new System.Drawing.Point(372, 243);
+            this.SemesterNotxt.Name = "SemesterNotxt";
+            this.SemesterNotxt.Size = new System.Drawing.Size(100, 20);
+            this.SemesterNotxt.TabIndex = 32;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -284,46 +301,6 @@
             this.updateOrDelete.TabIndex = 35;
             this.updateOrDelete.Visible = false;
             // 
-            // deleteBTN
-            // 
-            this.deleteBTN.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBTN.Location = new System.Drawing.Point(242, 18);
-            this.deleteBTN.Name = "deleteBTN";
-            this.deleteBTN.Size = new System.Drawing.Size(75, 23);
-            this.deleteBTN.TabIndex = 37;
-            this.deleteBTN.Text = "Delete";
-            this.deleteBTN.UseVisualStyleBackColor = true;
-            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
-            // 
-            // UpdateBTN
-            // 
-            this.UpdateBTN.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateBTN.Location = new System.Drawing.Point(113, 18);
-            this.UpdateBTN.Name = "UpdateBTN";
-            this.UpdateBTN.Size = new System.Drawing.Size(75, 23);
-            this.UpdateBTN.TabIndex = 36;
-            this.UpdateBTN.Text = "Update";
-            this.UpdateBTN.UseVisualStyleBackColor = true;
-            this.UpdateBTN.Click += new System.EventHandler(this.UpdateBTN_Click);
-            // 
-            // cUpdateRecord
-            // 
-            this.cUpdateRecord.Controls.Add(this.label5);
-            this.cUpdateRecord.Controls.Add(this.UpdateSemesterNo);
-            this.cUpdateRecord.Controls.Add(this.label3);
-            this.cUpdateRecord.Controls.Add(this.button14);
-            this.cUpdateRecord.Controls.Add(this.cHOURStxt);
-            this.cUpdateRecord.Controls.Add(this.cNAMEtxt);
-            this.cUpdateRecord.Controls.Add(this.cIDtxt);
-            this.cUpdateRecord.Controls.Add(this.label21);
-            this.cUpdateRecord.Controls.Add(this.label22);
-            this.cUpdateRecord.Controls.Add(this.label23);
-            this.cUpdateRecord.Location = new System.Drawing.Point(31, 58);
-            this.cUpdateRecord.Name = "cUpdateRecord";
-            this.cUpdateRecord.Size = new System.Drawing.Size(401, 210);
-            this.cUpdateRecord.TabIndex = 35;
-            this.cUpdateRecord.Visible = false;
-            // 
             // cDeleteRecord
             // 
             this.cDeleteRecord.Controls.Add(this.button18);
@@ -373,6 +350,63 @@
             this.label27.Size = new System.Drawing.Size(21, 15);
             this.label27.TabIndex = 20;
             this.label27.Text = "ID";
+            // 
+            // deleteBTN
+            // 
+            this.deleteBTN.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBTN.Location = new System.Drawing.Point(242, 18);
+            this.deleteBTN.Name = "deleteBTN";
+            this.deleteBTN.Size = new System.Drawing.Size(75, 23);
+            this.deleteBTN.TabIndex = 37;
+            this.deleteBTN.Text = "Delete";
+            this.deleteBTN.UseVisualStyleBackColor = true;
+            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
+            // 
+            // UpdateBTN
+            // 
+            this.UpdateBTN.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBTN.Location = new System.Drawing.Point(113, 18);
+            this.UpdateBTN.Name = "UpdateBTN";
+            this.UpdateBTN.Size = new System.Drawing.Size(75, 23);
+            this.UpdateBTN.TabIndex = 36;
+            this.UpdateBTN.Text = "Update";
+            this.UpdateBTN.UseVisualStyleBackColor = true;
+            this.UpdateBTN.Click += new System.EventHandler(this.UpdateBTN_Click);
+            // 
+            // cUpdateRecord
+            // 
+            this.cUpdateRecord.Controls.Add(this.label5);
+            this.cUpdateRecord.Controls.Add(this.UpdateSemesterNo);
+            this.cUpdateRecord.Controls.Add(this.label3);
+            this.cUpdateRecord.Controls.Add(this.button14);
+            this.cUpdateRecord.Controls.Add(this.cHOURStxt);
+            this.cUpdateRecord.Controls.Add(this.cNAMEtxt);
+            this.cUpdateRecord.Controls.Add(this.cIDtxt);
+            this.cUpdateRecord.Controls.Add(this.label21);
+            this.cUpdateRecord.Controls.Add(this.label22);
+            this.cUpdateRecord.Controls.Add(this.label23);
+            this.cUpdateRecord.Location = new System.Drawing.Point(31, 58);
+            this.cUpdateRecord.Name = "cUpdateRecord";
+            this.cUpdateRecord.Size = new System.Drawing.Size(401, 210);
+            this.cUpdateRecord.TabIndex = 35;
+            this.cUpdateRecord.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(78, 118);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 15);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Semester No.";
+            // 
+            // UpdateSemesterNo
+            // 
+            this.UpdateSemesterNo.Location = new System.Drawing.Point(207, 113);
+            this.UpdateSemesterNo.Name = "UpdateSemesterNo";
+            this.UpdateSemesterNo.Size = new System.Drawing.Size(100, 20);
+            this.UpdateSemesterNo.TabIndex = 35;
             // 
             // label3
             // 
@@ -454,6 +488,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(398, 63);
             this.dataGridView2.TabIndex = 30;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // button17
             // 
@@ -493,40 +528,6 @@
             this.label19.TabIndex = 25;
             this.label19.Text = "UPDATE / DELETE RECORD";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(211, 245);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 15);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Semester No.";
-            // 
-            // SemesterNotxt
-            // 
-            this.SemesterNotxt.Location = new System.Drawing.Point(372, 243);
-            this.SemesterNotxt.Name = "SemesterNotxt";
-            this.SemesterNotxt.Size = new System.Drawing.Size(100, 20);
-            this.SemesterNotxt.TabIndex = 32;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(78, 118);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 15);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Semester No.";
-            // 
-            // UpdateSemesterNo
-            // 
-            this.UpdateSemesterNo.Location = new System.Drawing.Point(207, 113);
-            this.UpdateSemesterNo.Name = "UpdateSemesterNo";
-            this.UpdateSemesterNo.Size = new System.Drawing.Size(100, 20);
-            this.UpdateSemesterNo.TabIndex = 35;
-            // 
             // Courses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -550,10 +551,10 @@
             this.cUpdateOrDeletePanel.ResumeLayout(false);
             this.cUpdateOrDeletePanel.PerformLayout();
             this.updateOrDelete.ResumeLayout(false);
-            this.cUpdateRecord.ResumeLayout(false);
-            this.cUpdateRecord.PerformLayout();
             this.cDeleteRecord.ResumeLayout(false);
             this.cDeleteRecord.PerformLayout();
+            this.cUpdateRecord.ResumeLayout(false);
+            this.cUpdateRecord.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
