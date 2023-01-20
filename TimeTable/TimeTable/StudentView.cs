@@ -28,24 +28,25 @@ namespace TimeTable
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string query = "select f.Teacher_Name, c.Course_Name, c.Course_CH, s.Slot_Time from timetable.faculty f, timetable.courses c, timetable.slottiming s where s.Slot_Num  = 1 AND c.Course_ID = 123456";
-
             
-
-            MySqlCommand cmd1 = new MySqlCommand("select f.Teacher_Name, c.Course_Name, c.Course_CH, s.Slot_Time from timetable.faculty f, timetable.courses c, timetable.slottiming s where s.Slot_Num  = 1 AND c.Course_ID = 123456", con);
-            
-            con.Open();
-
-            bool CourseExists = false;
-            using (var dr1 = cmd1.ExecuteReader())
-                if (CourseExists = dr1.HasRows)
-                    adapt = new MySqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            adapt.Fill(dt);
-            dataGridView1.DataSource = dt;
-            con.Close();
            
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string query = "select f.Teacher_Name, c.Course_Name, c.Course_CH, s.Slot_Time from timetable.faculty f, timetable.courses c, timetable.slottiming s where s.Slot_Num  = 1 AND c.Course_ID = 123456";
+
+            con.Open();
+
+            MySqlCommand cmd = new MySqlCommand(query, con);
+
+            var reader = cmd.ExecuteReader();
+            DataTable table = new DataTable();
+            table.Load(reader);
+            dataGridView1.DataSource = table;
+
+            con.Close();
         }
     }
 }
