@@ -131,6 +131,12 @@ namespace TimeTable
 
                 this.CloseConnection();
                 MessageBox.Show("Inserted.");
+                Course_ID.Text="";
+                courseNAME.Text = "";
+                Cr_H.Text = "";
+                SemesterNotxt.Text = "";
+
+
                 return true;
             }
         }
@@ -193,7 +199,7 @@ namespace TimeTable
 
         private void button7_Click(object sender, EventArgs e)
         {
-            cInsertPanel.Visible = false;
+           
             cUpdateOrDeletePanel.Visible = true;
         }
 

@@ -40,14 +40,14 @@
             this.fInsertPanel = new System.Windows.Forms.Panel();
             this.fUpdateOrDelete = new System.Windows.Forms.Panel();
             this.fUpdateORdeletePanel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.fUpdatepanel = new System.Windows.Forms.Panel();
             this.fDeletePanel = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.label33 = new System.Windows.Forms.Label();
             this.DeleteTeacher = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.fUpdatepanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.UPcourseID = new System.Windows.Forms.TextBox();
@@ -77,8 +77,8 @@
             this.fInsertPanel.SuspendLayout();
             this.fUpdateOrDelete.SuspendLayout();
             this.fUpdateORdeletePanel.SuspendLayout();
-            this.fUpdatepanel.SuspendLayout();
             this.fDeletePanel.SuspendLayout();
+            this.fUpdatepanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -197,7 +197,7 @@
             this.fUpdateOrDelete.Controls.Add(this.SearchTeacherID);
             this.fUpdateOrDelete.Controls.Add(this.label30);
             this.fUpdateOrDelete.Controls.Add(this.label32);
-            this.fUpdateOrDelete.Location = new System.Drawing.Point(3, 3);
+            this.fUpdateOrDelete.Location = new System.Drawing.Point(0, 0);
             this.fUpdateOrDelete.Name = "fUpdateOrDelete";
             this.fUpdateOrDelete.Size = new System.Drawing.Size(705, 427);
             this.fUpdateOrDelete.TabIndex = 49;
@@ -214,46 +214,6 @@
             this.fUpdateORdeletePanel.Size = new System.Drawing.Size(568, 266);
             this.fUpdateORdeletePanel.TabIndex = 31;
             this.fUpdateORdeletePanel.Visible = false;
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(316, 10);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 35;
-            this.button9.Text = "DELETE";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(168, 9);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 34;
-            this.button8.Text = "UPDATE";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // fUpdatepanel
-            // 
-            this.fUpdatepanel.Controls.Add(this.label1);
-            this.fUpdatepanel.Controls.Add(this.button6);
-            this.fUpdatepanel.Controls.Add(this.UPcourseID);
-            this.fUpdatepanel.Controls.Add(this.label20);
-            this.fUpdatepanel.Controls.Add(this.label28);
-            this.fUpdatepanel.Controls.Add(this.UPteacherCOURSE);
-            this.fUpdatepanel.Controls.Add(this.UPteacherNAME);
-            this.fUpdatepanel.Controls.Add(this.UPteacherID);
-            this.fUpdatepanel.Controls.Add(this.label29);
-            this.fUpdatepanel.Controls.Add(this.label41);
-            this.fUpdatepanel.Location = new System.Drawing.Point(1, 46);
-            this.fUpdatepanel.Name = "fUpdatepanel";
-            this.fUpdatepanel.Size = new System.Drawing.Size(567, 212);
-            this.fUpdatepanel.TabIndex = 33;
-            this.fUpdatepanel.Visible = false;
             // 
             // fDeletePanel
             // 
@@ -304,6 +264,46 @@
             this.label34.Size = new System.Drawing.Size(21, 15);
             this.label34.TabIndex = 50;
             this.label34.Text = "ID";
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(316, 10);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 35;
+            this.button9.Text = "DELETE";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(168, 9);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 34;
+            this.button8.Text = "UPDATE";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // fUpdatepanel
+            // 
+            this.fUpdatepanel.Controls.Add(this.label1);
+            this.fUpdatepanel.Controls.Add(this.button6);
+            this.fUpdatepanel.Controls.Add(this.UPcourseID);
+            this.fUpdatepanel.Controls.Add(this.label20);
+            this.fUpdatepanel.Controls.Add(this.label28);
+            this.fUpdatepanel.Controls.Add(this.UPteacherCOURSE);
+            this.fUpdatepanel.Controls.Add(this.UPteacherNAME);
+            this.fUpdatepanel.Controls.Add(this.UPteacherID);
+            this.fUpdatepanel.Controls.Add(this.label29);
+            this.fUpdatepanel.Controls.Add(this.label41);
+            this.fUpdatepanel.Location = new System.Drawing.Point(1, 46);
+            this.fUpdatepanel.Name = "fUpdatepanel";
+            this.fUpdatepanel.Size = new System.Drawing.Size(567, 212);
+            this.fUpdatepanel.TabIndex = 33;
+            this.fUpdatepanel.Visible = false;
             // 
             // label1
             // 
@@ -551,10 +551,10 @@
             this.fUpdateOrDelete.ResumeLayout(false);
             this.fUpdateOrDelete.PerformLayout();
             this.fUpdateORdeletePanel.ResumeLayout(false);
-            this.fUpdatepanel.ResumeLayout(false);
-            this.fUpdatepanel.PerformLayout();
             this.fDeletePanel.ResumeLayout(false);
             this.fDeletePanel.PerformLayout();
+            this.fUpdatepanel.ResumeLayout(false);
+            this.fUpdatepanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 

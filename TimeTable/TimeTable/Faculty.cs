@@ -221,6 +221,10 @@ namespace TimeTable
                 objcommand.ExecuteNonQuery();
 
                 this.CloseConnection();
+                TeacherID.Text = "";
+                TeacherNAME.Text = "";
+                TeacherCOURSE.Text = "";
+                TeacherCOURSEID.Text = "";
                 MessageBox.Show("Inserted.");
                 return true;
             }
