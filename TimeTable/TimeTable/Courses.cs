@@ -229,7 +229,7 @@ namespace TimeTable
                 this.CloseConnection();
 
             }
-            else
+              else
             {
                 MessageBox.Show("Delete Box is empty!!!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

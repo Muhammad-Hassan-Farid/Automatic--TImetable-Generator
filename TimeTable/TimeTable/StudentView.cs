@@ -35,9 +35,14 @@ namespace TimeTable
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //select c.Course_Name, t.Teacher_Name, d.Day_Name, s.Slot_Time from timetable.courses c, timetable.faculty t, timetable.days d, timetable.slottiming s, timetable.combine k where t.Course_ID = c.Course_ID AND s.Slot_Num = K.Slot_Num AND d.Day_Num = k.Day_Num
-            // c.Course_ID = t.Course_ID AND k.Slot_Num = s.Slot_Num AND k.Day_Num = d.Day_Num
-            string query = "select c.Course_Name, t.Teacher_Name, d.Day_Name, s.Slot_Time from timetable.courses c, timetable.faculty t, timetable.days d, timetable.slottiming s, timetable.combine k where k.PID = 5";
+            
+            string query = "SELECT c.Course_Name, d.Day_Name, s.Slot_Time, t.Teacher_Name FROM " +
+                "timetable.combine k JOIN timetable.courses c ON k.Course_ID = c.Course_ID" +
+                " JOIN timetable.days d ON k.Day_Num = d.Day_Num " +
+                "JOIN timetable.slottiming s ON k.Slot_Num = s.Slot_Num " +
+                "JOIN timetable.faculty t ON k.Teacher_ID = t.Teacher_ID";
+               
+                
 
             con.Open();
 
