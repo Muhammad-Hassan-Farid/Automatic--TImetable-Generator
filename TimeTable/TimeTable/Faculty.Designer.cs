@@ -205,7 +205,6 @@
             // 
             // fUpdateORdeletePanel
             // 
-            this.fUpdateORdeletePanel.Controls.Add(this.fDeletePanel);
             this.fUpdateORdeletePanel.Controls.Add(this.button9);
             this.fUpdateORdeletePanel.Controls.Add(this.button8);
             this.fUpdateORdeletePanel.Controls.Add(this.fUpdatepanel);
@@ -221,7 +220,7 @@
             this.fDeletePanel.Controls.Add(this.label33);
             this.fDeletePanel.Controls.Add(this.DeleteTeacher);
             this.fDeletePanel.Controls.Add(this.label34);
-            this.fDeletePanel.Location = new System.Drawing.Point(3, 46);
+            this.fDeletePanel.Location = new System.Drawing.Point(3, 0);
             this.fDeletePanel.Name = "fDeletePanel";
             this.fDeletePanel.Size = new System.Drawing.Size(568, 217);
             this.fDeletePanel.TabIndex = 39;
@@ -289,6 +288,7 @@
             // 
             // fUpdatepanel
             // 
+            this.fUpdatepanel.Controls.Add(this.fDeletePanel);
             this.fUpdatepanel.Controls.Add(this.label1);
             this.fUpdatepanel.Controls.Add(this.button6);
             this.fUpdatepanel.Controls.Add(this.UPcourseID);

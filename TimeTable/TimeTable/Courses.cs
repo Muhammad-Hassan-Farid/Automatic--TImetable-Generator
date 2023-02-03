@@ -45,6 +45,7 @@ namespace TimeTable
                 return false;
             }
         }
+
         //Close Connection
         private bool CloseConnection()
         {
@@ -116,11 +117,7 @@ namespace TimeTable
                 MessageBox.Show("Fill Boxs", "Stop", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return false;
             }
-            //else if (UserPassBox.Text != UserConfirmBox.Text)
-            //{
-            //  MessageBox.Show("Course Already Exits.", "Stop", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            // return false;
-            //}
+            
             else
             {
                 string query = "INSERT INTO timetable.courses (Course_ID,Course_Name,Course_CH,Semester_No) VALUES ('" + Course_ID.Text + "','" + courseNAME.Text + "','" + Cr_H.Text + "','"+ SemesterNotxt.Text+ "')";
@@ -213,8 +210,6 @@ namespace TimeTable
         private void deleteBTN_Click(object sender, EventArgs e)
         {
             cDeleteRecord.Visible = true;
-            
-            
         }
 
         private void button18_Click_1(object sender, EventArgs e)

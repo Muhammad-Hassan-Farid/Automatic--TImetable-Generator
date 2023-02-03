@@ -158,7 +158,7 @@ namespace TimeTable
             this.CloseConnection();
 
 
-            if (!(userExists))
+            if (!(userExists))   
             {
                 MessageBox.Show("ID not found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
